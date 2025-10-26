@@ -7,6 +7,7 @@ This project demonstrates how Transformers can be applied to computer vision tas
 
 The project captures real-time webcam input, detects hand gestures representing sign language symbols, and displays bounding boxes with classification labels using a fine-tuned DETR model.
 ## YOU CAN CHECK THE CHEATSHEET FOR MORE INFO
+<img width="264" height="270" alt="Cheatsheet" src="https://github.com/user-attachments/assets/dc20fac5-c910-48f5-bc2d-c356d4ef5cfc" />
 
 # ⚙️ Tech Stack
 

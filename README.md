@@ -1,13 +1,13 @@
-🧠 Real-Time Sign Language Detection using DETR
+#🧠 Real-Time Sign Language Detection using DETR
 
 A real-time Sign Language Detection System built using the Detection Transformer (DETR) architecture.
 This project demonstrates how Transformers can be applied to computer vision tasks like gesture recognition — combining CNN-based feature extraction and attention-based object detection for accessibility-driven AI.
 
-🚀 Overview
+#🚀 Overview
 
 The project captures real-time webcam input, detects hand gestures representing sign language symbols, and displays bounding boxes with classification labels using a fine-tuned DETR model.
 
-⚙️ Tech Stack
+#⚙️ Tech Stack
 
 Framework: PyTorch
 
@@ -21,7 +21,7 @@ Utilities: NumPy, Matplotlib, Colorama
 
 Loss Matching: Hungarian Algorithm (Scipy)
 
-🧩 Project Structure
+#🧩 Project Structure
 ├── data.py          # Dataset loader and augmentation
 ├── model.py         # DETR architecture (ResNet + Transformer)
 ├── loss.py          # Hungarian Matcher and DETR loss computation

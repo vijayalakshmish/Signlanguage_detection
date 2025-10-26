@@ -1,13 +1,14 @@
-#🧠 Real-Time Sign Language Detection using DETR
+# 🧠 Real-Time Sign Language Detection using DETR
 
 A real-time Sign Language Detection System built using the Detection Transformer (DETR) architecture.
 This project demonstrates how Transformers can be applied to computer vision tasks like gesture recognition — combining CNN-based feature extraction and attention-based object detection for accessibility-driven AI.
 
-#🚀 Overview
+# 🚀 Overview
 
 The project captures real-time webcam input, detects hand gestures representing sign language symbols, and displays bounding boxes with classification labels using a fine-tuned DETR model.
+## YOU CAN CHECK THE CHEATSHEET FOR MORE INFO
 
-#⚙️ Tech Stack
+# ⚙️ Tech Stack
 
 Framework: PyTorch
 
@@ -21,7 +22,7 @@ Utilities: NumPy, Matplotlib, Colorama
 
 Loss Matching: Hungarian Algorithm (Scipy)
 
-#🧩 Project Structure
+# 🧩 Project Structure
 ├── data.py          # Dataset loader and augmentation
 ├── model.py         # DETR architecture (ResNet + Transformer)
 ├── loss.py          # Hungarian Matcher and DETR loss computation
@@ -32,9 +33,7 @@ Loss Matching: Hungarian Algorithm (Scipy)
 └── utils/           # Supporting modules (logger, boxes, handlers)
 
 📦 Installation
-# Clone the repository
-git clone https://github.com/<yourusername>/SignDETR.git
-cd SignDETR
+
 
 # Create virtual environment
 python -m venv venv
@@ -50,7 +49,7 @@ uv run src/realtime.py
 
 🎥 Opens a live camera feed showing detected sign gestures with bounding boxes and confidence scores.
 
-🧠 Model Architecture
+ # 🧠 Model Architecture
 
 Backbone: ResNet-50 (pretrained on ImageNet)
 
@@ -64,7 +63,7 @@ pred_logits → gesture class probabilities
 
 pred_boxes → bounding box coordinates (normalized)
 
-⚖️ Loss & Optimization
+# ⚖️ Loss & Optimization
 
 The project uses a Hungarian Matching algorithm to optimally assign predictions to targets and compute:
 
@@ -76,7 +75,7 @@ GIoU Loss → Shape/overlap correction
 
 All combined with weighted loss balancing for stable training.
 
-🏋️ Training
+# 🏋️ Training
 uv run src/train.py
 
 
@@ -90,7 +89,7 @@ Logs progress with rich visualization
 
 Auto-saves model checkpoints every 10 epochs
 
-🧪 Testing
+# 🧪 Testing
 uv run src/test.py
 
 
@@ -100,7 +99,7 @@ Visualizes detections
 
 Logs inference time and performance metrics
 
-🔴 Example Output
+# 🔴 Example Output
 Mode	Example
 Training	Loss convergence chart
 Inference	Bounding boxes with predicted signs
